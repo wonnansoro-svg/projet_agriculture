@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #fffefe;
+    color: rgb(14, 13, 13);
+    padding: 15px;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utiliser Flexbox pour aligner les éléments du menu horizontalement */
+    justify-content: space-around;
+    align-items: center; /
+}
+nav ul li{
+    display: inline;/
+    font-size: 20px;
+}
+nav ul li a{
+    color: rgb(12, 12, 12); /* Couleur des liens du menu */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    font-weight: bold; /* Mettre les liens en gras */
+    padding: 8px 16px; /* Ajouter de l'espace autour des liens */
+    display: block; /* Permet de faire en sorte que le padding soit cliquable sur toute la zone du lien */
+}
+
+nav ul li a:hover{
+    background-color: #f5ecec;
+    border-radius: 4px;
+}
+
+header{
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    margin-left: -185px;
+}
+
+.header p {
+    margin-bottom: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ .image-container {
+            position: relative; /* Positionner le conteneur relativement */
+            width: 100%; /*Occuper toute la largeur*/
+            max-width: 650px; /* Largeur maximum pour contrôler l'affichage */
+            margin: 0 auto; /* Centrer l'image dans la page */
+            height: 1400px; /* Hauteur fixe pour l'image */
+        }
+
+  .image-container img {
+            width: 100%; /* Faire l'image responsive */
+            height: 90%; /* Conserver le ratio de l'image */
+            display: block; /* Supprimer les espaces blancs en dessous de l'image */
+            padding: 90px; /* Ajouter un espacement interne pour éviter que le texte ne touche les bords de l'image */
+        }
+ .overlay-text {
+            position: absolute; /*Positionnement absolu pour superposer*/
+            transform: translate(-50%, -50%); /* Centrer le texte */
+            color: rgb(0, 0, 0); /* Couleur du texte */
+            font-size: 24px; /* Taille de la police */
+            text-align: center; /*Aligner le texte au centre */
+            padding: 20px; /* Ajouter de l'espace autour du texte */
+            top: 85%; /* Positionner le texte au centre verticalement */
+            left: 50%; /* Positionner le texte au centre horizontalement */
+           
+        }
+
+ .overlay-text a {
+            color: rgb(0, 0, 0); /* Couleur des liens */
+            text-decoration: none; /* Supprimer le soulignement des liens */
+            font-weight: bold; /* Mettre les liens en gras */
+            padding: 10px 60px; /* Ajouter de l'espace autour des liens */
+            background-color: #f5ecec; /* Couleur de fond des liens */
+            border-radius: 25px; /* Coins arrondis pour les liens */
+            margin: 10px; /* Espacement entre les liens */
+        }       
+
+footer {
+    background-color: #ffffff; /* Couleur de fond du pied de page */
+    color: rgb(14, 13, 13); /* Couleur du texte du pied de page */
+    text-align: center; /* Centrer le texte du pied de page */
+    padding: 40px; /* Espacement interne du pied de page */
+    top: 50%;
+    left: 50%;  
+}
+footer p {
+    margin: 10px 0; /* Espace entre les paragraphes du pied de page */
+}
+footer h3 {
+    margin: 0; /* Supprimer la marge par défaut du titre */
+    font-size: 18px; /* Taille de la police du titre */
+}
+
+/* Style pour responsivité */
+@media (max-width: 768px) {
+    nav{
+        padding: 10px; /* Réduire le padding du nav sur les petits écrans */
+        
+    }
+    header {
+        height: 300px; /* Réduire la hauteur du header sur les petits écrans */
+        font-size: 24px; /* Réduire la taille de la police du header */
+    }
+    .overlay-text {
+        font-size: 18px; /* Réduire la taille de la police du texte superposé sur les petits écrans */
+        padding: 10px; /* Réduire le padding du texte superposé sur les petits écrans */
+    }
+    .overlay-text a {
+        padding: 8px 40px; /* Réduire le padding des liens sur les petits écrans */
+        font-size: 16px; /* Réduire la taille de la police des liens sur les petits écrans */
+    }
+    footer{
+        padding: 20px; /* Réduire le padding du pied de page sur les petits écrans */
+        font-size: 14px; /* Réduire la taille de la police du pied de page sur les petits écrans */
+    }
+}
+
+
